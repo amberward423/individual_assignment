@@ -1,0 +1,41 @@
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
+.nav {
+    border: 1px solid #0c0b0b;
+    display: flex;
+    gap: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(174, 157, 137);
+    align-items: flex-end;
+}
+
+.highlight{
+  background-color: pink;
+  font-weight: bold;
+}
