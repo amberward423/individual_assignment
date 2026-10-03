@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: white;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ table {
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: white;
   border-bottom: 1px solid #ccc;
   font-weight: normal;
   padding: 0.5em 1em;
@@ -31,7 +31,7 @@ td {
   gap: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(174, 157, 137);
+  background-color: rgb(247, 128, 0);
   align-items: flex-end;
 }
 
@@ -45,4 +45,14 @@ td {
   padding: 10px;
   text-align: center;
   border-top: 2px solid;
+}
+
+#profile-info {
+  margin-top: 20px;
+  padding: 100px;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  font-size: 20px;
 }

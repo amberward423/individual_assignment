@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="ia.css" />
-    <script type="module" src="login.js" defer></script>
+
+    <script type="module" src="profile.js" defer></script>
   </head>
   <body>
     <nav class="nav">
       <a href="example.html">Home </a>
-      <a href="weekly-menu.html">Weekly menu </a>
       <a href="login.html">Login </a>
       <a href="logout.html">Logout </a>
       <a href="profile.html">Profile </a>
     </nav>
-    <h2>Login</h2>
-    <form id="login-form">
-      <input type="text" id="Username" placeholder="Username" />
-      <input type="password" id="Password" placeholder="Password" />
-      <button id="login-button" type="submit">Login</button>
-    </form>
+    <h1>My Profile</h1>
+    <div id="profile-info">
+      <p>Username: <span id="username"></span></p>
+      <p>Email: <span id="email"></span></p>
+      <p>Favorite Restaurant: <span id="favouriteRestaurant"></span></p>
+      <select id="restaurant-select"></select>
+      <p>Role: <span id="role"></span></p>
+    </div>
   </body>
 </html>
