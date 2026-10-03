@@ -8,11 +8,18 @@
     <script type="module" src="weekly.js" defer></script>
   </head>
   <body>
+    <nav class="nav">
+      <a href="http://127.0.0.1:5500/example.html">Home </a>
+      <a href="http://127.0.0.1:5500/login.html">Login </a>
+    </nav>
     <h1>Weekly Menu</h1>
+    <h2>Choose a restaurant</h2>
+    <select id="restaurant-select">
+      <option value="">Choose a Restaurant</option>
+    </select>
     <div id="Weekly-Menu">
       <table>
         <tr>
-          <th>Date</th>
           <th>Course</th>
           <th>Price</th>
           <th>Dietary Restrictions</th>

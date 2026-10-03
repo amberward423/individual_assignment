@@ -26,16 +26,23 @@ td {
 }
 
 .nav {
-    border: 1px solid #0c0b0b;
-    display: flex;
-    gap: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(174, 157, 137);
-    align-items: flex-end;
+  border: 1px solid #0c0b0b;
+  display: flex;
+  gap: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(174, 157, 137);
+  align-items: flex-end;
 }
 
-.highlight{
+.highlight {
   background-color: pink;
   font-weight: bold;
+}
+
+.weekly-day {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid;
 }
