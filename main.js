@@ -24,6 +24,8 @@ fetch('https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants').then(
             console.log(restaurant._id);
             console.log('CLICKED');
             const dailyMenuUrl = `https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants/daily/${restaurant._id}/fi`;
+            const weeklyMenuUrl = `https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants/weekly/${restaurant._id}/fi`;
+
             console.log(dailyMenuUrl);
             fetch(dailyMenuUrl).then(function (response) {
               console.log(response);
@@ -64,6 +66,22 @@ fetch('https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants').then(
                   td_price.innerHTML = course.price;
                   dialogTable.appendChild(tr);
                 }
+              });
+            });
+            fetch(weeklyMenuUrl).then(function (response) {
+              response.json().then(function (data) {
+                console.log(data);
+                const days = data.days;
+                for (const day of days) {
+                  console.log(day);
+                  const dailycourses = day.courses;
+                  for (const course of dailycourses) {
+                    console.log(course);
+                  }
+                }
+                console.log(days[0]);
+                const dailyMenu = document.getElementById('Daily-Menu');
+                const dailyMenuTable = dailyMenu.querySelector('table');
               });
             });
             document
