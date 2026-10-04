@@ -63,8 +63,9 @@ fetch('https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants').then(
                 tr.appendChild(td_price);
                 tr.appendChild(td_diets);
                 td_course_name.innerHTML = course.name;
-                td_diets.innerHTML = course.diets;
-                td_price.innerHTML = course.price;
+                td_diets.innerHTML =
+                  course.diets || 'no dietary restrictions available';
+                td_price.innerHTML = course.price || 'no price available';
 
                 weeklyMenuTable.appendChild(tr);
               }

@@ -7,9 +7,12 @@ body {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-  margin: 0;
+  border-spacing: 10px;
+  margin: 20px auto;
+  width: 80%;
   padding: 0;
+  border: 1px solid #ccc;
+  overflow-x: auto;
 }
 
 th {
@@ -18,41 +21,114 @@ th {
   font-weight: normal;
   padding: 0.5em 1em;
   text-align: left;
+  font-weight: bold;
 }
-
+tr:hover {
+  background-color: rgb(247, 128, 0);
+}
 td {
   border-bottom: 1px solid #ccc;
   padding: 0.5em 1em;
 }
 
 .nav {
-  border: 1px solid #0c0b0b;
-  display: flex;
-  gap: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 100%;
   background-color: rgb(247, 128, 0);
-  align-items: flex-end;
+  overflow: auto;
+  display: flex;
 }
 
+.nav a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+.nav a:link,
+a:visited {
+  background-color: rgb(255, 134, 5);
+  color: black;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: rgb(240, 116, 5);
+  color: black;
+}
 .highlight {
-  background-color: pink;
+  background-color: rgb(247, 128, 0);
   font-weight: bold;
 }
 
 .weekly-day {
   font-weight: bold;
-  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   border-top: 2px solid;
 }
 
 #profile-info {
   margin-top: 20px;
-  padding: 100px;
+  padding: 30px;
   font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
 }
 h1 {
   text-align: center;
   font-size: 20px;
+}
+#avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto 10px;
+}
+#avatar {
+  display: inline-block;
+  margin: 0 auto 10px;
+}
+#main-heading {
+  margin: 0px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+dialog {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  width: 500px;
+  height: 400px;
+  font-size: 16px;
+}
+
+#Weekly-Menu {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+#restaurant-select {
+  position: static;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+#menu-heading {
+  text-align: center;
+}
+.login-container {
+  display: flex;
+  gap: 50px;
 }

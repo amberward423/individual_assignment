@@ -11,17 +11,22 @@
   <body>
     <nav class="nav">
       <a href="example.html">Home </a>
+      <a href="weekly-menu.html">Weekly menu </a>
       <a href="login.html">Login </a>
-      <a href="logout.html">Logout </a>
       <a href="profile.html">Profile </a>
     </nav>
     <h1>My Profile</h1>
     <div id="profile-info">
+      <input type="file" id="avatar" />
+      <img id="avatar-image" src="" alt="Avatar" />
       <p>Username: <span id="username"></span></p>
       <p>Email: <span id="email"></span></p>
+      <input type="text" id="updated-email" />
+      <button id="update-email-b" type="button">Update email</button>
       <p>Favorite Restaurant: <span id="favouriteRestaurant"></span></p>
       <select id="restaurant-select"></select>
       <p>Role: <span id="role"></span></p>
+      <button id="logout-button">Logout</button>
     </div>
   </body>
 </html>

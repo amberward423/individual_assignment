@@ -6,20 +6,36 @@
     <title>Login</title>
     <link rel="stylesheet" href="ia.css" />
     <script type="module" src="login.js" defer></script>
+    <script type="module" src="register.js" defer></script>
   </head>
   <body>
     <nav class="nav">
       <a href="example.html">Home </a>
       <a href="weekly-menu.html">Weekly menu </a>
       <a href="login.html">Login </a>
-      <a href="logout.html">Logout </a>
       <a href="profile.html">Profile </a>
     </nav>
+    <div class="login-container">
+        <div class="login-section">
     <h2>Login</h2>
     <form id="login-form">
       <input type="text" id="Username" placeholder="Username" />
       <input type="password" id="Password" placeholder="Password" />
       <button id="login-button" type="submit">Login</button>
     </form>
+    </div>
+    <div class="register-section">
+    <h2>Register</h2>
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" /><br />
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" />
+      <button type="button" id="register_button">Register</button>
+    </form>
+    </div>
+    </div>
   </body>
 </html>

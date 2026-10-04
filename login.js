@@ -35,4 +35,3 @@ loginForm.addEventListener('submit', function (event) {
   });
 });
 
-console.log(loginButton.disabled);
