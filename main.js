@@ -46,7 +46,7 @@ fetch('https://media2.edu.metropolia.fi/restaurant/api/v1/restaurants').then(
           <table>
           <tr>
           <th>Course</th>
-          <th>Price</th>         
+          <th>Price</th>
           <th>Diets</th>
           </tr>
           </table>
